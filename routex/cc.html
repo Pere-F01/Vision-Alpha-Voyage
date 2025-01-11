@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannière d'Images Touristiques</title>
+    <style>
+        .banner-sect {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 80%;
+            margin: 0 auto; /* Centre la section */
+        }
+
+        .banner-sect h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .banner-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .banner-description {
+            position: absolute;
+            bottom: 20px; /* Ajoute un espace en bas */
+            left: 20px;  /* Ajoute un espace à gauche */
+            right: 20px; /* Ajoute un espace à droite */
+            background: rgba(0, 0, 255, 0.8); /* Bleu avec une légère transparence */
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 10px;
+            border-radius: 5px; /* Ajoute des coins arrondis */
+        }
+
+        .banner-item:hover .banner-description {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="banner-sect">
+        <h1>Destinations Touristiques</h1>
+        <div class="banner">
+            <div class="banner-item">
+                <img src="./assets/imgs/concact/contact-right3-img.png" alt="Moscou">
+                <div class="banner-description">Découvrez Moscou et ses trésors historiques. Cette ville emblématique est riche en culture et en architecture, avec des sites célèbres tels que la cathédrale Saint-Basile et le Kremlin, qui attirent des visiteurs du monde entier.</div>
+            </div>
+            <div class="banner-item">
+                <img src="./assets/imgs/concact/contact-right3-img.png" alt="Saint-Pétersbourg">
+                <div class="banner-description">Explorez la magnifique Saint-Pétersbourg, connue pour ses somptueux palais et ses canaux pittoresques. La ville offre une combinaison unique de beauté naturelle et d'architecture spectaculaire, avec des lieux emblématiques comme le Palais d'Hiver et la Forteresse Pierre-et-Paul.</div>
+            </div>
+            <div class="banner-item">
+                <img src="./assets/imgs/visa/tourist.jpeg" alt="Kazan">
+                <div class="banner-description">Découvrez Kazan et ses merveilles culturelles. Cette ville est une fusion unique entre l'Orient et l'Occident, offrant une riche histoire et une diversité culturelle. Parmi les sites incontournables, on trouve le Kremlin de Kazan, un site du patrimoine mondial de l'UNESCO.</div>
+            </div>
+            <div class="banner-item">
+                <img src="./assets/imgs/visa/tour-russie.jpeg" alt="Novossibirsk">
+                <div class="banner-description">Visitez Novossibirsk et ses attractions uniques. En tant que capitale de la Sibérie, Novossibirsk est connue pour son riche patrimoine scientifique et ses nombreux musées, théâtres et galeries d'art, offrant un aperçu fascinant de la vie en Sibérie.</div>
+            </div>
+            <div class="banner-item">
+                <img src="./assets/imgs/visa/moscow.jpg" alt="Saint-Pétersbourg">
+                <div class="banner-description">Admirez les paysages de Saint-Pétersbourg. Cette ville respire l'histoire à chaque coin de rue, avec ses magnifiques parcs, ses cathédrales majestueuses et ses canaux romantiques, offrant une expérience inoubliable à chaque visiteur.</div>
+            </div>
+            <div class="banner-item">
+                <img src="./assets/imgs/visa/monument-russie.jpeg" alt="Saint-Pétersbourg">
+                <div class="banner-description">Saint-Pétersbourg est une ville emblématique avec une richesse architecturale et culturelle exceptionnelle. Chaque visiteur est séduit par ses palais majestueux, ses ponts levers et ses nuits blanches inoubliables.</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

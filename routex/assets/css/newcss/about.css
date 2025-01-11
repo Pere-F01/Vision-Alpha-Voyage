@@ -1,0 +1,133 @@
+.team-section-custom {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.container-custom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+}
+.title-custom {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.person-custom {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.person-custom img {
+    width: 35vh;
+    height: 40vh;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.person-custom h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+.person-custom p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+.social-icons-custom {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icons-custom img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+@media (max-width: 768px) {
+    .container-custom {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .person-custom {
+        margin-bottom: 20px;
+    }
+    .ig {
+    margin-top: -6rem;
+    }
+}
+/*contact */
+.back {
+    height: 65rem;
+}
+.ig {
+    width: 100%;
+    height: 70rem;
+}
+.banner-sect {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto; /* Centre la section */
+}
+
+.banner-sect h2 {
+    text-align: center;
+    color: #151234;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.banner-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20rem;
+}
+
+.banner-item img {
+    width: 50rem;
+    height: 50rem;
+    display: block;
+}
+
+.banner-description {
+    position: absolute;
+    bottom: 30%; /* Ajoute un espace en bas */
+    left: 4rem;  /* Ajoute un espace à gauche */
+    right: 4rem; /* Ajoute un espace à droite */
+    background: rgba(42, 42, 51, 0.8); /* Bleu avec une légère transparence */
+    color: white;
+    line-height: 2.7rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
+.banner-item:hover .banner-description {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        grid-template-columns: 1fr;
+    }
+}
